@@ -11,12 +11,16 @@ public class RewardValue{
         this.cValue=convertToCash(mValue);
     }
     double convertToCash(int mValue){
+
         return mValue * rate;
     }
     double getCashValue(){
+
+
         return cValue;
     }
     int getMilesValue(){
+
         return (int)(this.cValue/rate);
     }
 
